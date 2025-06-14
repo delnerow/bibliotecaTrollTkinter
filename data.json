@@ -1,0 +1,85 @@
+{
+    "livros": [
+        {
+            "id": 0,
+            "titulo": "A coisa das coisas",
+            "ano_publicacao": 1976,
+            "genero": "Terror C\u00f3smico",
+            "editora": "National Cakes",
+            "autor": "Jefferson Silva",
+            "image": "cover00.jpg"
+        },
+        {
+            "id": 1,
+            "titulo": "Quando as cigarras choram",
+            "ano_publicacao": 1865,
+            "genero": "Romance",
+            "editora": "Garfield Holdings",
+            "autor": "William Good",
+            "image": "cover03.jpg"
+        },
+        {
+            "id": 2,
+            "titulo": "As met\u00e1foras de S\u00f3crates",
+            "ano_publicacao": 30,
+            "genero": "Filosofia",
+            "editora": "Athenas Publishings",
+            "autor": "Plat\u00e3o",
+            "image": "cover05.jpg"
+        },
+        {
+            "id": 3,
+            "titulo": "O bafo do drag\u00e3o",
+            "ano_publicacao": 1460,
+            "genero": "Trova",
+            "editora": "Mechanicus Papirus",
+            "autor": "Duarte Draco",
+            "image": "cover06.jpg"
+        },
+        {
+            "id": 4,
+            "titulo": "Cozinhando microchips",
+            "ano_publicacao": 2240,
+            "genero": "Receita",
+            "editora": "Universal Books",
+            "autor": "Wigzy Meah",
+            "image": "cover04.jpg"
+        },
+        {
+            "id": 5,
+            "titulo": "Espingarda: A hist\u00f3ria n\u00e3o contada",
+            "ano_publicacao": 2006,
+            "genero": "N\u00e3o-Fic\u00e7\u00e3o",
+            "editora": "Panthera Paper",
+            "autor": "Hughes Von Harden",
+            "image": "cover02.jpg"
+        },
+        {
+            "id": 6,
+            "titulo": "Relatos de uma herdeira",
+            "ano_publicacao": 2015,
+            "genero": "Autobiografia",
+            "editora": "Galia Crown",
+            "autor": "Isabelle Fleur II",
+            "image": "cover00.jpg"
+        },
+        {
+            "id": 7,
+            "titulo": "O esbeldo playboy",
+            "ano_publicacao": 2022,
+            "genero": "Romance",
+            "editora": "Rockyou",
+            "autor": "Catarina Hernandez",
+            "image": "cover06.jpg"
+        },
+        {
+            "id": 8,
+            "titulo": "O futuro dos gangsters desempregados",
+            "ano_publicacao": 2020,
+            "genero": "Suspense",
+            "editora": "Roma",
+            "autor": "Ricardo Giovanna",
+            "image": "cover05.jpg"
+        }
+    ]
+}
