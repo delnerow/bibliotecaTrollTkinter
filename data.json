@@ -56,6 +56,24 @@
         },
         {
             "id": 6,
+            "titulo": "O esbeldo playboy",
+            "ano_publicacao": 2022,
+            "genero": "Romance",
+            "editora": "Rockyou",
+            "autor": "Catarina Hernandez",
+            "image": "cover03.jpg"
+        },
+        {
+            "id": 7,
+            "titulo": "O futuro dos gangsters desempregados",
+            "ano_publicacao": 2020,
+            "genero": "Suspense",
+            "editora": "Roma",
+            "autor": "Ricardo Giovanna",
+            "image": "cover05.jpg"
+        },
+        {
+            "id": 8,
             "titulo": "Relatos de uma herdeira",
             "ano_publicacao": 2015,
             "genero": "Autobiografia",
@@ -64,22 +82,22 @@
             "image": "cover00.jpg"
         },
         {
-            "id": 7,
-            "titulo": "O esbeldo playboy",
-            "ano_publicacao": 2022,
-            "genero": "Romance",
-            "editora": "Rockyou",
-            "autor": "Catarina Hernandez",
-            "image": "cover06.jpg"
+            "id": 9,
+            "titulo": "Oberon",
+            "ano_publicacao": 1625,
+            "genero": "Folklore",
+            "editora": "Penguins United",
+            "autor": "Desconhecido",
+            "image": "cover03.jpg"
         },
         {
-            "id": 8,
-            "titulo": "O futuro dos gangsters desempregados",
-            "ano_publicacao": 2020,
-            "genero": "Suspense",
-            "editora": "Roma",
-            "autor": "Ricardo Giovanna",
-            "image": "cover05.jpg"
+            "id": 10,
+            "titulo": "Kali Linux Guide",
+            "ano_publicacao": 2024,
+            "genero": "Autoajuda",
+            "editora": "Penguins United",
+            "autor": "Dimitri Daniel Allan Leskow",
+            "image": "cover04.jpg"
         }
     ]
 }
