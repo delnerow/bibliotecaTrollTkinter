@@ -13,6 +13,7 @@ def load_data():
                     catalogo.append(Livro.from_dict(t))
             return catalogo
     except FileNotFoundError:
+        print("Erro: Arquivo não econtrado. Biblioteca de Alexandria.")
         return []
 
 def save_data(catalogo):

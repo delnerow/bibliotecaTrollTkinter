@@ -62,11 +62,10 @@ class Catalogo:
 
         
     def run(self):
-        
         self.draw()
         self.root.mainloop()
+        
     def draw(self):
-        # Clear previous widgets except the 'Adicionar' button
         for widget in self.root.winfo_children():
             if isinstance(widget, tk.Button) and widget['text'] == "Adicionar":
                 continue
@@ -74,7 +73,6 @@ class Catalogo:
         self.imagens.clear()
         self.buttons.clear()
 
-        # Redraw Add button (if it was destroyed above)
         botao_Add = tk.Button(self.root, text="Adicionar", command=lambda: self.confLivro())
         botao_Add.grid(row=0, column=5)
 
@@ -90,6 +88,7 @@ class Catalogo:
             self.imagens.append(img)
             livro_image = tk.Label(self.root, image=img)
             livro_image.grid(row = 0 + int(idx//self.MAX_COLUMN)*2, column=idx%self.MAX_COLUMN)
+   
     def readLivro(self, livro):
         if self.popup_window is not None and self.popup_window.winfo_exists():
             return
@@ -217,12 +216,12 @@ class Catalogo:
             livro.autor = autor
             livro.image = image
         else:
-            # Swap all attributes between the two books
+            
             livro_a = self.livros[old_id]
             livro_b = self.livros[new_id_int]
-            # Store livro_b's original data
+            
             temp = (old_id, livro_b.titulo, livro_b.ano_publicacao, livro_b.genero, livro_b.editora, livro_b.autor, livro_b.image)
-            # Update livro_b with new data
+            
             livro_b.id = new_id_int
             livro_b.titulo = titulo
             livro_b.ano_publicacao = ano_publicacao_int
@@ -258,7 +257,7 @@ class Catalogo:
             entry.grid(row=i, column=1)
             entries.append(var)
 
-        # Pre-fill the fields
+        
         campos[0][1].set(livro.titulo)
         campos[1][1].set(livro.autor)
         campos[2][1].set(str(livro.ano_publicacao))
@@ -266,7 +265,7 @@ class Catalogo:
         campos[4][1].set(livro.editora)
         campos[5][1].set(str(livro.id))
 
-        # Add old_id as a tk.IntVar
+        
         old_id_var = tk.IntVar()
         old_id_var.set(livro.id)
         entries.append(old_id_var)
@@ -304,13 +303,13 @@ class Catalogo:
                 return
             submit_button.config(state=tk.NORMAL)
 
-        # Adiciona o trace para todos os campos relevantes
+       
         for var in entries[:-1]:
             var.trace_add('write', validate_fields)
         validate_fields()  # Validação inicial
     def deleteLivro(self, livro):
         self.livros.remove(livro)
-        # Reassign IDs to keep them in order
+        
         for idx, livro in enumerate(self.livros):
             livro.id = idx
         self.save()
